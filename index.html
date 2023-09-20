@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Capital</title>
+</head>
+<body>
+
+  <div class="block">
+    <h1>Find the capital</h1>
+    <p id="countryName"></p>
+    <div id="options">
+      <button class="option" onclick="checkAnswer(this)">A</button>
+      <button class="option" onclick="checkAnswer(this)">B</button>
+      <button class="option" onclick="checkAnswer(this)">C</button>
+    </div>
+    <p id="result"></p>
+    <p>Right: <span id="correctAnswers">0</span></p>
+    <p>incorrect: <span id="wrongAnswers">0</span></p>
+    <div id="timer" class="timer">15</div>
+    <button id="nextButton" onclick="nextQuestion()">Next question-></button>
+    <button id="playAgainButton" onclick="playAgain()">Play again-></button>
+    
+  </div>
+  <script src="App.js"></script>
+</body>
+</html>
